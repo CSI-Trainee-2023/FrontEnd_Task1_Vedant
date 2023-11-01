@@ -9,16 +9,21 @@ const Navbar=() =>{
   return (
     
 <div className='Navbar'>
-<div className='NavbarUpperSection'>
+<div className='NavbarUpperSection'><div className="brandNameAndLogo">
     <img src={LogoImage} height="90px" width="130px"  alt='' />
-  <h1>Urban Nest</h1>
-  <div className="Navbarimage"><div className='navbarimage1'>
+    
+  <h1>Urban Nest</h1></div>
+  <div className="Navbarimage">
+  <div className="profileAndCart">
+    <div className='navbarimage1'>
+  
     <img src={NavbarImagePerson} height="40px" width="40px" alt='' /></div>
     <div className='navbarimage2'>
     <img src={NavbarImageCart} height="30px" width="30px" alt='' /></div>
     </div>
-</div>
-   <hr size="1.3" width="1190" color='black' /> 
+    </div>
+</div><br />
+   <hr size="1.3" width="90%" color='black' /> 
    <ul className="Navbaritems">
    <li>HOME</li>
    <li>STORE</li>
@@ -28,9 +33,8 @@ const Navbar=() =>{
    <li>ABOUT US</li>
    <li>NEWS</li>
    <li>CONTACT US</li>
-   
    </ul>
-   <hr size="1.3" width="1190" color='black' />   
+   <hr size="1.3" width="90%" color='black' />
 </div>
   )
 }

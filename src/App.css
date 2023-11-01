@@ -1,33 +1,182 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  
   text-align: center;
 }
+.view {
+  cursor: pointer;
+  padding: 15px 25px;
+  background-color: #4C8787;
+  border: 2px solid white;
+  color: white;
+  font-size: 1rem;
+  font-family: 'roboto';
+  box-shadow: 0 3px 5px black;
+}
+.ContainerBelowSearchBar{
+  display: flex;
+  justify-content: space-evenly;
+}
+.TextBesideIcon{
+  display: flex;
+  font-size: 0.65rem;
+  font-family:Arial, Helvetica, sans-serif;
+  color: grey;
+}
+.TextBesideIcon img{
+  padding:0.5rem
+}
 
-.logo {
-  height: 5em;
-  padding: 1.5em;
+.BannerForSale{
+  display: flex;
+  background-color: #F9D370;
+  justify-content:center;
+  padding: 2.5rem;
+  margin: 0%;
+  
+}
+.SaleText{
+  text-align: left ;
+  margin-left: 15%;
+  font-family:Arial, Helvetica, sans-serif;
+  margin-top: 2.5rem;
+}
+#SaleTextBig{
+  color: chocolate;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+.horizontalContainerInApp{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+h1{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.bedSheetSet img {
+  width: 100%;
+}
+
+.bedSheetSet {
+  position: relative;
+}
+
+.overImageContent {
+  padding: 2%;
+  position: absolute;
+  width: 30%;
+  top: 50%;
+  left: 10%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  transform: translateY(-50%);
+  background-color: rgba(249, 211, 112, 0.8);
+  text-align: left;
+  /* padding: 3rem; */
+  
+  
+}
+
+.overImageContent h3,
+h4{
+ padding: 2%;
+}
+
+.overImageContent h4{
  
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+.overImageContent h3{
+  font-size: 1.9vw;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.overImageContent h3,
+span{
+  color: #623312;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+.overImageContent span{
+  padding:1rem;
+  font-size: 1.2rem;
+  text-decoration: line-through;
+}
+
+
+.SignUpForNewsletter{
+  display: flex;
+  justify-content: space-around;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: left;
+}
+.SignUpForNewsletterContent{
+
+}
+.emailContainer {
+  width: 35%;
+  height: min-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 1.5px solid black;
+}
+
+.emailContainer input {
+  border: none;
+  width: 100%;
+  padding: 9px 5px;
+  font-size: 1.2rem;
+  
+}
+
+.emailContainer{
+  background-color: #4C8787;
+}
+
+.emailContainer img {
+  width: 20px;
+  padding: 11px 25px;
+}
+@media screen and (max-width: 1100px) {
+  .overImageContent{
+    background-color: lightgrey;
+    opacity: 0.8;
+
   }
+  .overImageContent h3, h4{
+    display: none;
+  }
+}
+@media screen and (max-width: 950px) {
+  .Horizontalcontainer img{
+    width: 100%;
+  }
+  .Horizontalcontainer{
+    display: flex;
+    flex-direction: column;
+  }
+   
+  .topRating h2 {
+    font-size: 1rem;
+    margin-left: 80%;
+  }
+  .BannerForSale{
+    width: 100%;
+  }
+
+
+.Navbarimage{
+  
+  display: flex;
+ padding-left: 2rem;
+  
+}
+}
+@media screen and (max-width: 900px){
+.footerContainer{
+     display: flex;
+     flex-direction: column;
+     
+}
 }
