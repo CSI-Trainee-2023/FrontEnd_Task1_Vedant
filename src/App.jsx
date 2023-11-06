@@ -3,10 +3,10 @@ import Navbar from './MyComponents/Navbar'
 import SearchBar from './MyComponents/SearchBar'
 import Horizontalcontainer from './MyComponents/Horizontalcontainer'
 import TopRatingBox from './MyComponents/TopRatingBox'
-import freeShipping from '../src/assets/freeShipping.png'
-import refund from '../src/assets/refund.png'
-import support from '../src/assets/support.png'
-import Chair from '../src/assets/Chair.png'
+import freeShipping from '../assets/freeShipping.png'
+import refund from '../assets/refund.png'
+import support from '../assets/support.png'
+import Chair from '../assets/Chair.png'
 import Footer from './MyComponents/Footer'
 import VerticalCard from './MyComponents/VerticalCard'
 
@@ -141,18 +141,18 @@ function App() {
         </div>
        </div><br />
         <div className="horizontalContainerInApp">
-                <Horizontalcontainer image="../src/assets/vintageChair.png" title="INY VINTAGE CHAIR" /> 
-                <Horizontalcontainer image="../src/assets/terracotaVase.png" title="LARGE TERRACOTA VASE" />
+                <Horizontalcontainer image="../assets/vintageChair.png" title="INY VINTAGE CHAIR" /> 
+                <Horizontalcontainer image="../assets/terracotaVase.png" title="LARGE TERRACOTA VASE" />
             </div>
 <br />
 <div className="verticalCardHolder">
                 {verticalImages.map((element,id) => (
-                    <VerticalCard image={`../src/assets/${element.id}`} title1={element.desc} title2={element.price} details={element.details} list={verticalImages} key={id}/>
+                    <VerticalCard image={`../assets/${element.id}`} title1={element.desc} title2={element.price} details={element.details} list={verticalImages} key={id}/>
                 ))}
             </div>
 <br />
 <div className="bedSheetSet">
-                <img src="../src/assets/bedSheet.png" alt="" />
+                <img src="../assets/bedSheet.png" alt="" />
                 <div className="overImageContent">
                     <h2>BEDSHEET SETS</h2>
                     <h3>$50.0 <span>$220.0</span></h3>
@@ -164,7 +164,7 @@ function App() {
           <h2>TOP RATING</h2>
               <div className="topRatingHolder">
       {topRating.map((element) => (
-             <TopRatingBox image={`../src/assets/${element.id}`} title1={element.desc} title2={element.price} />
+             <TopRatingBox image={`../assets/${element.id}`} title1={element.desc} title2={element.price} />
               ))}
             </div>
         </div>
@@ -177,7 +177,7 @@ function App() {
                 </div>
                 <div className="emailContainer">
                     <input type="email" id="emailInput" />
-                    <a href="#"><img src="../src/assets/email.png" alt="" /></a>
+                    <a href="#"><img src="../assets/email.png" alt="" /></a>
                 </div>
             </div>
             <br />  <br />
